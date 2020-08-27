@@ -53,3 +53,6 @@ const TagsSection: React.FC = () => {
 
 ###
 数字输入，文本 待解决
+
+###
+可以input一个 state，useState 用解构的方式
