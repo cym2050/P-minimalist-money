@@ -1,15 +1,13 @@
-import React from "react";
-import styled from "styled-components";
 
-import { Link } from "react-router-dom";
+import styled from "styled-components";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import Icon from "./Icon";
 //require 可以防止 Tree Shaking
 // require("icons/money.svg");
 // require("icons/tag.svg");
 // require("icons/statistics.svg");
-
-
-
+const color = "#61bafb"
 const NavWrapper = styled.nav`
   line-height: 1.2;
   box-shadow: 0 0 3px rgba(0,0,0,0.25);
@@ -18,16 +16,23 @@ const NavWrapper = styled.nav`
     >li{
       padding:4px 0;
       width: 33.33333%;
-      text-align: center;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      flex-direction:column;
-      font-size:12px;
-      >.icon{
+      >a{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        font-size:12px;
+        color:#666666;
+        fill:#666666;
+        >.icon{
           width:32px;
           height:32px;
-      }
+        }
+        &.selected{
+            color:${color};
+            fill:${color};
+        }
+      } 
     }
   }
 `;
@@ -37,16 +42,22 @@ const Nav = () => {
         <NavWrapper>
             <ul>
                 <li>
-                    <Icon name="tag" />
-                    <Link to="/tags">标签</Link>
+                    <NavLink to="/tags" activeClassName="selected">
+                        <Icon name="tag" />
+                        标签
+                    </NavLink>
                 </li>
                 <li>
-                    <Icon name="money" />
-                    <Link to="/money">记账</Link>
+                    <NavLink to="/money" activeClassName="selected">
+                        <Icon name="money" />
+                        记账
+                    </NavLink>
                 </li>
                 <li>
-                    <Icon name="statistics" />
-                    <Link to="/statistics">统计</Link>
+                    <NavLink to="/statistics" activeClassName="selected">
+                        <Icon name="statistics" />
+                        统计
+                    </NavLink>
                 </li>
             </ul>
         </NavWrapper>

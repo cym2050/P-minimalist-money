@@ -14,3 +14,4 @@
 
 -- 解决node-sass问题
 -- 解决styled-component支持 css $变量
+-- hashRouter与BrowserRouter
