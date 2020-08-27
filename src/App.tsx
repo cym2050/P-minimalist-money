@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Nav from './components/Nav'
 
 import {
   HashRouter as Router,
@@ -21,19 +22,6 @@ const Main = styled.div`
   border: 1px solid green;
   flex-grow: 1;
   overflow: auto;
-`
-
-const Nav = styled.nav`
-  border: 1px solid blue;
-  > ul {
-    display: flex;
-    > li {
-      width: 33.3333%;
-      text-align: center;
-      padding: 1rem;
-    }
-  }
-
 `
 
 export default function App() {
@@ -58,19 +46,7 @@ export default function App() {
           </Switch>
         </Main>
       
-        <Nav>
-          <ul>
-            <li>
-              <Link to="/tags">标签</Link>
-            </li>
-            <li>
-              <Link to="/money">记账</Link>
-            </li>
-            <li>
-              <Link to="/statistics">统计</Link>
-            </li>
-          </ul>
-        </Nav>
+        <Nav />
       </Wrapper>
     </Router>
   );

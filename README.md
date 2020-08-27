@@ -11,3 +11,6 @@
 - yarn add --dev @types/react-router-dom
 
 - 使用HashRouter
+
+-- 解决node-sass问题
+-- 解决styled-component支持 css $变量
