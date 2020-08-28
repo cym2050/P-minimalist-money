@@ -23,11 +23,11 @@ const defaultRecords = {
 }
 
 function Money() {
-    useEffect(() => {
-        if (document.documentElement.clientWidth > 500) {
-            window.alert("请使用【手机】或者【开发者工具手机模式】预览网址")
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (document.documentElement.clientWidth > 500) {
+    //         window.alert("请使用【手机】或者【开发者工具手机模式】预览网址")
+    //     }
+    // }, [])
     const { createRecord } = useRecords()
     const { tags } = useTags();
     if (tags[0]) {

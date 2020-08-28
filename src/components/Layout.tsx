@@ -11,6 +11,9 @@ const Main = styled.div`
   flex-grow:1;
   overflow:auto;
   background:#F4F4F4;
+  &::-webkit-scrollbar {
+    display:none;
+}
 `;
 
 const Layout = (props: any) => {
