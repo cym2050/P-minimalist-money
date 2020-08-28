@@ -56,3 +56,6 @@ const TagsSection: React.FC = () => {
 
 ###
 可以input一个 state，useState 用解构的方式
+
+###
+抽离主题色、添加背景色、
