@@ -12,14 +12,14 @@
 
 - 使用HashRouter
 
--- 解决node-sass问题
--- yarn install失败，一致性验证
--- 解决styled-component支持 css $变量
--- hashRouter与BrowserRouter
--- jsx模板字符串里支持CSS变量
--- 有时候并不是你程序由问题，而是要重新yarn start一下，即使程序编译提示你语法错误，可能是之前编译的时候这个文件完全没有使用过这个特性（如react组件），编译器没有加载解析器，要重新yarn start一下才会加载。
+- 解决node-sass问题
+- yarn install失败，一致性验证
+- 解决styled-component支持 css $变量
+- hashRouter与BrowserRouter
+- jsx模板字符串里支持CSS变量
+- 有时候并不是你程序由问题，而是要重新yarn start一下，即使程序编译提示你语法错误，可能是之前编译的时候这个文件完全没有使用过这个特性（如react组件），编译器没有加载解析器，要重新yarn start一下才会加载。
 
-###
+
 实现tags的功能，使用react函数组件与typescript语法，useState，map函数返回一个数组的标签来渲染，用tags数组存所有tag，selectedTags存已选中的tag，用indexOf返回值从判断是否在，然后根据值设置clasName，然后样式不同
 ```
 const TagsSection: React.FC = () => {
@@ -52,14 +52,6 @@ const TagsSection: React.FC = () => {
 }
 ```
 
-###
-数字输入，文本 待解决
-
-###
 可以input一个 state，useState 用解构的方式
 
-###
-抽离主题色、添加背景色、
-
-###
 具体标签编辑页面使用useParams获取url id展示不同页面
