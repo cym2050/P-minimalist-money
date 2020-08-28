@@ -13,6 +13,7 @@
 - 使用HashRouter
 
 -- 解决node-sass问题
+-- yarn install失败，一致性验证
 -- 解决styled-component支持 css $变量
 -- hashRouter与BrowserRouter
 -- jsx模板字符串里支持CSS变量
