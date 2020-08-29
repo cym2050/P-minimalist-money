@@ -26,7 +26,7 @@ const useTags = () => {
         window.localStorage.setItem('tags', JSON.stringify(tags))
     }, tags)
     const findTag = (id: number) => {
-        console.log(tags)
+        // console.log(tags)
         return tags.filter(t => t.id === id)[0]
     }
     const findTagIndex = (id: number) => {
